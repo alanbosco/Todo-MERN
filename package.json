@@ -4,15 +4,18 @@
         "client",
         "server"
     ],
+    "cacheDirectories": [
+        "client/node_modules",
+        "server/node_modules"
+    ],
     "scripts": {
         "dev": "concurrently \"cd server && yarn run dev\" \"cd client && yarn run dev\" ",
-        "build": "yarn workspaces foreach run build",
+        "build": "yarn workspace server run build",
         "build:server": "yarn workspace server run build",
         "build:client": "yarn workspace client run build",
         "dev:server": "yarn workspace server run dev",
         "dev:client": "yarn workspace client run dev",
-        "start": "yarn workspace server start",
-        "heroku-postbuild": "yarn run build:server"
+        "start": "yarn workspace server start"
     },
     "devDependencies": {
         "@types/express": "^4.17.13",
