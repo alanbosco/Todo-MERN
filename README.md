@@ -2,6 +2,17 @@
 
 That obligatory Todo app with an extra feature (service workers)
 
+### Spec
+
+1. Add Todo
+    1. Set reminder (time)
+2. Remove todo
+3. List todo
+    1. Active items
+    2. Completed items
+4. Mark complete
+    1. Remaining count
+
 
 ### Resources
 
@@ -12,3 +23,5 @@ That obligatory Todo app with an extra feature (service workers)
 
 3. [https://github.com/yarnpkg/berry/issues/1713](https://github.com/yarnpkg/berry/issues/1713)
 4. [Directory structure](https://stackoverflow.com/a/51128385)
+5. [PWA](https://vite-plugin-pwa.netlify.app/guide/)
+6. [vite-plugin-pwa type declaration issue](https://github.com/antfu/vite-plugin-pwa/issues/38#issuecomment-812905116)

@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import logo from "./logo.svg";
+import logo from "@/assets/logo.svg";
 import "./App.css";
 
 function App() {
@@ -13,6 +13,7 @@ function App() {
         <p>
           <button
             type="button"
+            className="btn"
             onClick={() => setCount((count: number) => count + 1)}
           >
             count is: {count}
